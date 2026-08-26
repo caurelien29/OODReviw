@@ -5,14 +5,17 @@ import java.util.ArrayList;
 public class Order {
     private ArrayList<MenuItem> items;
 
+    // Creates an empty order
     public Order() {
         items = new ArrayList<>();
     }
 
+    // Adds a menu item to the order
     public void addItem(MenuItem item) {
         items.add(item);
     }
 
+    // Calculates the total cost of the order
     public double calculateTotal() {
         double total = 0.0;
 
@@ -23,6 +26,7 @@ public class Order {
         return total;
     }
 
+    // Displays the items and total for the order
     public void displayOrderDetails() {
         System.out.println("Order Details:");
 

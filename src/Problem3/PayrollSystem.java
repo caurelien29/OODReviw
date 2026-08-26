@@ -6,14 +6,17 @@ import java.util.List;
 public class PayrollSystem {
     private List<Payable> employees;
 
+    // Creates an empty payroll system
     public PayrollSystem() {
         employees = new ArrayList<>();
     }
 
+    // Adds an employee to the payroll
     public void addEmployee(Payable employee) {
         employees.add(employee);
     }
 
+    // Displays payroll details and the total cost
     public void processPayroll() {
         System.out.println("Payroll Details ");
 
@@ -24,6 +27,7 @@ public class PayrollSystem {
         System.out.printf("Total Payroll Cost: $%.2f%n", totalPayrollCost());
     }
 
+    // Calculates the total payroll cost
     public double totalPayrollCost() {
         double total = 0;
 

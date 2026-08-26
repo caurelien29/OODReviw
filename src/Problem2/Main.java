@@ -3,6 +3,7 @@ package Problem2;
 public class Main {
     public static void main(String[] args) {
 
+        // Creates a user for the playlist system
         User user = new User("Cooper");
 
         Song song1 = new Song("Blinding Lights", "The Weeknd", 3.20);
@@ -12,6 +13,7 @@ public class Main {
         Song song5 = new Song("Take Five", "Dave Brubeck", 5.24);
         Song song6 = new Song("My Favorite Things", "John Coltrane", 13.42);
 
+        // Creates playlists for different music genres
         Playlist pop = user.createPlaylist("My Pop", "pop");
         Playlist rock = user.createPlaylist("My Rock", "rock");
         Playlist jazz = user.createPlaylist("My Jazz", "jazz");

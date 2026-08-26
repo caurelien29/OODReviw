@@ -10,6 +10,7 @@ package Problem3;
  */
 public class PayrollTest {
     public static void main(String[] args) {
+        // Creates the payroll system
         PayrollSystem payroll = new PayrollSystem();
 
         SalariedEmployee employee1 = new SalariedEmployee("Alice", 101, 72000);
@@ -18,6 +19,7 @@ public class PayrollTest {
 
         ContractEmployee employee3 = new ContractEmployee("Charlie", 103, 5000);
 
+        // Adds all employees to the payroll
         payroll.addEmployee(employee1);
         payroll.addEmployee(employee2);
         payroll.addEmployee(employee3);
@@ -28,6 +30,7 @@ public class PayrollTest {
         employee3.displayInfo();
         System.out.println();
 
+        // Processes the employee payroll
         payroll.processPayroll();
     }
 }

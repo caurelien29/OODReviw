@@ -7,6 +7,7 @@ public abstract class Vehicle {
     protected int year;
     protected double dailyRate;
 
+    // Creates a vehicle with its basic rental information
     public Vehicle(String make, String model, int year, double dailyRate) {
         this.make = make;
         this.model = model;
@@ -14,6 +15,7 @@ public abstract class Vehicle {
         this.dailyRate = dailyRate;
     }
 
+    // Displays the vehicle's basic information
     public void displayVehicleInfo() {
         System.out.println("Make: " + make);
         System.out.println("Model: " + model);

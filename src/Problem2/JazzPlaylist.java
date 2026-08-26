@@ -2,10 +2,12 @@ package Problem2;
 
 public class JazzPlaylist extends Playlist {
 
+    // Creates a jazz playlist
     public JazzPlaylist(String name) {
         super(name);
     }
 
+    // Plays all songs in the jazz playlist
     @Override
     public void playAllSongs() {
         System.out.println("Playing Jazz playlist: " + getName());
@@ -15,6 +17,7 @@ public class JazzPlaylist extends Playlist {
         }
     }
 
+    // Returns the vibe of the playlist
     @Override
     public String getVibe() {
         return "Smoth and relaxing!";

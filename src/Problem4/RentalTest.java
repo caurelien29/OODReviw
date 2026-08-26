@@ -4,12 +4,14 @@ public class RentalTest {
 
     public static void main(String[] args) {
 
+        // Creates the rental company
         RentalCompany company = new RentalCompany();
 
         Car car = new Car("Toyota", "Camry", 2024, 55.00);
         Truck truck = new Truck("Ford", "F-150", 2023, 80.00);
         Motorcycle motorcycle = new Motorcycle("Honda", "Rebel 500", 2024, 50.00);
 
+        // Adds the vehicles to the company fleet
         company.addVehicleToFleet(car);
         company.addVehicleToFleet(truck);
         company.addVehicleToFleet(motorcycle);
@@ -20,6 +22,7 @@ public class RentalTest {
         System.out.println("RENTAL TERMS");
         company.displayAllRentalTerms();
 
+        // Creates a customer and records their rentals
         Customer customer = new Customer("Cooper Aurelien");
 
         customer.rentVehicle(car);
@@ -28,6 +31,7 @@ public class RentalTest {
 
         int rentalDays = 5;
 
+        // Calculates the customer's total rental cost
         double totalSpent = customer.getTotalSpent(rentalDays);
 
         System.out.println("CUSTOMER RENTAL");
