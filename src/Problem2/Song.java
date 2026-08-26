@@ -2,36 +2,43 @@ package Problem2;
 
 public class Song {
     private String title;
-    private int duration;
+    private Double duration;
     private String artist;
 
-    public Song(String title,int duration , String artist) {
+    public Song(String title , String artist,double duration) {
         this.title = title;
-        this.duration = duration;
+
         this.artist = artist;
+        this.duration = duration;
     }
 
     public String getTitle() {
+
         return title;
     }
 
     public void setTitle(String title) {
+
         this.title = title;
     }
 
-    public int getDuration() {
+    public double getDuration() {
+
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(double duration) {
+
         this.duration = duration;
     }
 
     public String getArtist() {
+
         return artist;
     }
 
     public void setArtist(String artist) {
+
         this.artist = artist;
     }
 
